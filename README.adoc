@@ -74,6 +74,33 @@ https://www.jenkins.io/doc/book/managing/system-properties/[Java system properti
 There is no system property that allows removing entries from the default allow list for the required role check.
 It should only contain safe types, so it is not expected to need customization.
 
+== Affected Functionality
+
+With this plugin installed, some Jenkins plugin functionality may not work any longer.
+This includes everything affected by the https://www.jenkins.io/doc/upgrade-guide/2.303/#SECURITY-2458[SECURITY-2458] and https://www.jenkins.io/doc/upgrade-guide/2.303/#SECURITY-2455[SECURITY-2455] changes.
+In addition to that, the following functionality is expected to break when this plugin is installed:
+
+|====
+| Plugin | Affected Feature | Fix or Workaround
+
+| https://plugins.jenkins.io/cobertura/[Cobertura]
+| "Publish Cobertura Coverage Report" post-build step fails
+| n/a
+
+| https://plugins.jenkins.io/code-coverage-api/[Code Coverage API]
+| Saving of source files (optional feature) in post-build step fails
+| Disable feature
+
+| https://plugins.jenkins.io/log-parser/[Log Parser]
+| Log parsing fails
+| n/a
+
+| https://plugins.jenkins.io/maven-plugin/[Maven Integration]
+| Archiving Maven sites and Javadoc fails
+| Do not archive Maven sites or Javadoc
+
+|====
+
 == LICENSE
 
 Licensed under MIT, see link:LICENSE.md[LICENSE].
