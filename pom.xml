@@ -9,7 +9,7 @@
     </parent>
     <groupId>io.jenkins.plugins</groupId>
     <artifactId>remoting-security-workaround</artifactId>
-    <version>${revision}${changelist}</version>
+    <version>1.0</version>
     <packaging>hpi</packaging>
     <properties>
         <revision>1.0</revision>
@@ -44,7 +44,7 @@
         <connection>scm:git:git://github.com/${gitHubRepo}.git</connection>
         <developerConnection>scm:git:git@github.com:${gitHubRepo}.git</developerConnection>
         <url>https://github.com/${gitHubRepo}</url>
-        <tag>${scmTag}</tag>
+        <tag>remoting-security-workaround-1.0</tag>
     </scm>
 
     <repositories>
