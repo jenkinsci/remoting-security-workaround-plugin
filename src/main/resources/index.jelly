@@ -1,0 +1,5 @@
+<?jelly escape-by-default='true'?>
+<div>
+    This plugin provides protections against various remoting-related security vulnerabilities
+    in Jenkins 2.303.2 and earlier, and Jenkins 2.318 and earlier.
+</div>
