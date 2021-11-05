@@ -86,17 +86,17 @@ In addition to that, the following functionality is expected to break when this 
 | https://plugins.jenkins.io/cobertura/[Cobertura]
 | "Publish Cobertura Coverage Report" post-build step fails
 | n/a
-| n/a
+| https://github.com/jenkinsci/cobertura-plugin/pull/130[cobertura-plugin#130]
 
 | https://plugins.jenkins.io/code-coverage-api/[Code Coverage API]
 | Saving of source files (optional feature) in post-build step fails
 | Do not use the feature
-| n/a
+| Update Code Coverage API Plugin to 2.0.4
 
 | https://plugins.jenkins.io/log-parser/[Log Parser]
 | Log parsing fails
 | n/a
-| n/a
+| https://github.com/jenkinsci/log-parser-plugin/pull/32[log-parser-plugin#32]
 
 | https://plugins.jenkins.io/maven-plugin/[Maven Integration]
 | Archiving Maven sites and Javadoc fails
