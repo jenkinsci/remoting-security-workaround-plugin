@@ -86,7 +86,7 @@ In addition to that, the following functionality is expected to break when this 
 | https://plugins.jenkins.io/cobertura/[Cobertura]
 | "Publish Cobertura Coverage Report" post-build step fails
 | n/a
-| https://github.com/jenkinsci/cobertura-plugin/pull/130[cobertura-plugin#130]
+| Update Cobertura Plugin to 1.17
 
 | https://plugins.jenkins.io/code-coverage-api/[Code Coverage API]
 | Saving of source files (optional feature) in post-build step fails
