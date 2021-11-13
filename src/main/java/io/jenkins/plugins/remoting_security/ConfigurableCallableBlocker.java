@@ -60,6 +60,7 @@ public class ConfigurableCallableBlocker extends CallableDecorator {
         }
         SPECIFIC_CALLABLES_TO_ALWAYS_REJECT.add("hudson.scm.SubversionSCM$DescriptorImpl$SshPublicKeyCredential$1"); // SECURITY-2506
         SPECIFIC_CALLABLES_TO_ALWAYS_REJECT.add("hudson.FilePath$FileCallableWrapper"); // SECURITY-2455
+        SPECIFIC_CALLABLES_TO_ALWAYS_REJECT.add("org.jenkinsci.squashtm.tawrapper.TestListSaver$TestListCallable"); // SECURITY-2525
         SPECIFIC_CALLABLES_TO_ALWAYS_REJECT.add(Tester.BlockedByDefaultNoOpAgentToControllerCallable.class.getName()); // Test utility in this plugin
     }
 
